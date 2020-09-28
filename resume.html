@@ -1,0 +1,203 @@
+<html>
+    <body>
+        <head>
+        <link rel="stylesheet"
+        href="style.css">
+        <h1 style="text-align:center;">Curriculum vitae</h1>
+    </head>
+  
+<table style="width:100%">
+           <tr><th> <label for="Full Name">Full Name:
+        </label></th>
+        
+        <th><input type="text" id="Full Name" name="Full Name"></th></tr>
+        <tr><th>
+        <label for ="Objective">Objective:</label></th>
+
+        <th><textarea id ="Objective" name="Objective" rows="2" cols="60" ></textarea></th></tr>
+        <tr><th><label for="Name of board">Name of board:
+        </label></th>
+        
+        <th><input type="text" id="Name of board" name="Name of board"></th></tr>
+        <tr><th><label for="SSC">Year of passing 10th?</label></th>
+        <th><select name="year" id="year">
+            <option value="">Select Year</option>
+        </select>
+        
+        
+        <script type="text/javascript">
+        for(y = 2000; y <= 2500; y++) {
+                var optn = document.createElement("OPTION");
+                optn.text = y;
+                optn.value = y;
+                
+                // if year is 2015 selected
+                if (y == 2015) {
+                    optn.selected = true;
+                }
+                
+                document.getElementById('year').options.add(optn);
+        }
+        </script>
+ 
+</th>             
+</tr>
+            <tr><th><label for="SSC1">Year of passing 12th?</label></th>
+            <th><select name="year" id="year1">
+                <option value="">Select Year</option>
+            </select>
+            
+           
+            <script type="text/javascript">
+            for(y = 2000; y <= 2500; y++) {
+                    var optn = document.createElement("OPTION");
+                    optn.text = y;
+                    optn.value = y;
+                    
+                    // if year is 2015 selected
+                    if (y == 2015) {
+                        optn.selected = true;
+                    }
+                    
+                    document.getElementById('year1').options.add(optn);
+            }
+            </script>
+          </th>  
+        </tr>
+        
+        <tr><th><label for="Course">Course:
+            </label></th>
+        
+        <th><input type="radio" id="CSE" value="CSE" name="Course">
+        <label for="CSE">CSE</label><br>
+        
+        <input type="radio" id="ECE" value="ECE" name="Course">
+        <label for="ECE">ECE</label><br>
+        <input type="radio" id="EEE" value="EEE" name="Course">
+        <label for="EEE">EEE</label><br>
+        <input type="radio" id="MECH" value="MECH" name="Course">
+        <label for="MECH">MECH</label><br>
+        <input type="radio" id="CIVIL" value="CIVIL" name="Course">
+        <label for="CIVIL">CIVIL</label><br>
+        <input type="radio" id="Other" value="Other" name="Course">
+        <label for="Other">Other</label></th></tr>
+        <tr><th><label for="CGPA">CGPA:
+            </label></th>
+            
+           <th><input type="text" id="CGPA" name="CGPA"></th></tr>
+            <tr><th><label for="SSC">Year of passing?</label></th>
+            <th><select name="year" id="year3">
+                <option value="">Select Year</option>
+            </select>
+            
+            
+            <script type="text/javascript">
+            for(y = 2000; y <= 2500; y++) {
+                    var optn = document.createElement("OPTION");
+                    optn.text = y;
+                    optn.value = y;
+                    
+                    // if year is 2015 selected
+                    if (y == 2015) {
+                        optn.selected = true;
+                    }
+                    
+                    document.getElementById('year3').options.add(optn);
+            }
+            </script></th>
+            </tr>
+        
+        <tr><th><label for="Job experience">Job experience:
+            </label></th>
+            <th><input type="radio" id="Yes" value="Yes" name="Job experience">
+            <label for="Yes">Yes</label><br>
+            <input type="radio" id="No" value="No" name="Job experience">
+            <label for="No">No</label></th></tr>
+            <tr><th>
+            <label for="List of accomplishments">List of accomplishments:
+            </th>
+
+
+<th>
+<table id="myTable" >
+  <tr>
+    <td>Accomplishment Name</td>
+    <td>Accomplishment details</td>
+  </tr>
+</table>
+<br>
+
+<button type="button" onclick="myFunction()">Click to add details</button>
+
+<script>
+    var index=1;
+function myFunction() {
+  var table = document.getElementById("myTable");
+  var row = table.insertRow(index);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var t1=document.createElement("input");
+  t1.id = "txtName"+index;
+  cell1.appendChild(t1);
+  var t2=document.createElement("input");
+  t2.id = "txtAge"+index;
+  cell2.appendChild(t2);
+}
+</script></th>
+</tr>
+
+<tr><th>
+        <label for="Project Details">Project Details:
+        </th>
+
+
+<th>
+<table id="myTable1" >
+<tr>
+<td>Project Name</td>
+<td>Project date</td>
+</tr>
+</table>
+<br>
+
+<button type="button" onclick="myFunction2()">Click to add details</button>
+
+<script>
+var index=1;
+function myFunction2() {
+var table = document.getElementById("myTable1");
+var row = table.insertRow(index);
+var cell1 = row.insertCell(0);
+var cell2 = row.insertCell(1);
+var t1=document.createElement("input");
+t1.id = "PrjName"+index;
+cell1.appendChild(t1);
+var t2=document.createElement("input");
+t2.id = "PrjAge"+index;
+cell2.appendChild(t2);
+}
+</script></th>
+</tr>
+
+<tr><th>
+        <label for="Skills">Skills:
+        </label></th><th>
+        <input type="Checkbox" name="Skills" value="1">c<br>
+        <input type="Checkbox" name="Skills" value="2">c++<br>
+        <input type="Checkbox" name="Skills" value="3">JAVA</th></tr>
+        <tr><th>
+        <label for="Add resume">Attach resume:
+            </label></th>
+            <th><input type="file" id="my file">
+            <button onclick="myFunction1()"></button>
+            <script>
+                function myFunction1()
+                {
+                    var x=document.getElementById("myFile");
+                    x.disabled=true;
+                }
+            </script></th></tr>
+        </table><br>
+        <div class=center><input  type="submit" value="submit"></div>
+    </body>
+</html>

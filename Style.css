@@ -1,0 +1,16 @@
+body{
+    background-color: lightgoldenrodyellow;
+    margin-left:20px;
+    padding-left:40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-style:solid;
+}
+table, td {
+    border: 1px solid black;
+  }
+  th,tb {
+    border: 1px solid black;
+}
+.center {
+  text-align: center;
+}
